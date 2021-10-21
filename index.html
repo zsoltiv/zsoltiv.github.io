@@ -1,15 +1,51 @@
 <!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <title>Git házi</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css"
+  </head>
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
+  <body>
+    <main>
+      <h1>Git repository készítése és feltöltés Githubra</h1>
 
-        <title>Zsolt Vadász</title>
+      <h2>Helyi repository készítése</h2>
+      <code class="cmd">
+        git init
+      </code>
+      <p>Létrehoz egy helyi repository-t a jelenlegi mappában.</p>
 
-        <link rel="stylesheet" href="styles.css">
-    </head>
+      <h2>Commitolás</h2>
+      <code class="cmd">
+        git add
+      </code>
+      <p>
+        Ezzel a paranccsal fájlokat "stagelhetünk", avagy adhatunk hozzá a commitolandó fájlok listájához.
+        Az <span class="cmd">-a</span> opcióval automatikusan stagel minden módosított fájlt.
+      </p>
+      <code class="cmd">
+        git commit
+      </code>
+      <p>
+        Ez a parancs gyakorlatilag elmenti a fájlokat a jelenlegi tartalmukkal, hasonló egy mentés gombhoz.
+      </p>
 
-    <body>
-        <h1>mukodik</h1>
-    </body>
+      <h2>Pusholás</h2>
+      <p>
+        Ahhoz, hogy a munkánkat feltölthessük Githubra, létre kell hoznunk egy repository-t az oldalon.
+      </p>
+      <code class="cmd">
+        git remote add [név] [URI]
+      </code>
+      <p>Hozzáad egy repository-t a remote repository-k listájához.</p>
+      <code class="cmd">
+        git push [név] [ág]
+      </code>
+      <p>
+        Feltölti a legutolsó commitot a <span class="cmd">név</span> remote <span class="cmd">ág</span>
+        ágára (általában master vagy main).
+      </p>
+    </main>
+  </body>
 </html>
