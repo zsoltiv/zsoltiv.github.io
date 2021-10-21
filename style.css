@@ -1,0 +1,33 @@
+:root {
+    --bg-color:      #161616;
+    --fg-color:      #ECDBBA;
+    --special-color: #C84B31;
+    --border-color:  #346751;
+}
+
+body {
+    color:            var(--fg-color);
+    background-color: var(--bg-color);
+}
+
+main {
+    margin: auto;
+    width: 60%;
+}
+
+h1 {
+    color: var(--special-color);
+}
+
+h2 {
+    border-bottom: 1px solid var(--fg-color);
+}
+
+.cmd {
+    color: var(--special-color);
+}
+
+code.cmd {
+    line-height: 22px;
+    display: inline-block;
+}
